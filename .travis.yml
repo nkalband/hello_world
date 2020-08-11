@@ -1,0 +1,27 @@
+version: ~> 1.0
+
+language: generic
+
+services:
+  - docker
+
+before_install:
+  - echo "cloning universe"
+  - git clone --single-branch -b master https://github.com/nkalband/Spark-Benchmarks-Setup.git
+
+jobs:
+    include:
+      - name: Power Build
+        os: linux-ppc64le
+        dist: xenial
+        script: 
+          - echo "Running travis Power build"
+          - uname -a
+          - ./hello.sh
+          
+      - name: x86 Build
+        os: linux
+        script: 
+          - echo "Running travis build"
+          - uname -a
+          - ./hello.sh
