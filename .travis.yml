@@ -8,5 +8,6 @@ before_install:
   - git clone --single-branch -b master https://github.com/nkalband/hello_world2.git
   - ls -ltrR
   
-import: hello_world2/common.yml
+import: 
+  - hello_world2/common.yml
 # import: nkalband/hello_world2:common.yml
