@@ -7,5 +7,7 @@ before_install:
   - echo "cloning hello_world2"
   - git clone --single-branch -b master https://github.com/nkalband/hello_world2.git
   
+script:
+  - ls -ltrR    
 # import: ./hello_world2/common.yml
 import: nkalband/hello_world2:common.yml
