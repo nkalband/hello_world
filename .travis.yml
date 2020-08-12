@@ -5,6 +5,6 @@ services:
 
 before_install:
   - echo "cloning universe"
-  - git clone --single-branch -b master https://github.com/nkalband/Spark-Benchmarks-Setup.git
+  - git clone --single-branch -b master https://github.com/nkalband/hello_world2.git
 
-import: ./common.yml
+import: ./hello_world2/common.yml
