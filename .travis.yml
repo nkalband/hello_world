@@ -9,5 +9,5 @@ before_install:
   - ls -ltrR
   
 import: 
-  - hello_world2/common.yml
+  - source : hello_world2/common.yml
 # import: nkalband/hello_world2:common.yml
