@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - echo "cloning universe"
+  - echo "cloning hello_world2"
   - git clone --single-branch -b master https://github.com/nkalband/hello_world2.git
-
+  
 import: ./hello_world2/common.yml
