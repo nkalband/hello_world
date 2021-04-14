@@ -7,12 +7,12 @@ jobs:
     executor: win/default
     steps:
       - checkout
-      - run: echo 'Hello, Windows' && uname -a && uname -p
+      - run: echo 'Hello, Windows' && uname -a && uname -p && free -h && du -sh .
   hello:
     machine:
       image: ubuntu-2004:202010-01 # recommended linux image
     steps:
-        - run: echo 'Hi hello/hello-build' && uname -a && uname -p
+      - run: echo 'Hi hello/hello-build' && uname -a && uname -p && free -h && du -sh .
 workflows:
     "Hello Workflow":
         jobs:
