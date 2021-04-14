@@ -6,10 +6,7 @@ jobs:
   build:
     executor: win/default
     steps:
-      command: |
-        echo 'Hello, Windows' 
-        pwd
-        systeminfo 
+      - run: systeminfo 
   hello:
     machine:
       image: ubuntu-2004:202010-01 # recommended linux image
