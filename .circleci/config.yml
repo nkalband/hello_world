@@ -9,7 +9,10 @@ jobs:
       - checkout
       - run: echo 'Hello, Windows'
   hello:
-      - hello/hello-build    
+    machine:
+      image: ubuntu-2004:202010-01 # recommended linux image
+    steps:
+        - run: echo 'Hi hello/hello-build'    
 workflows:
     "Hello Workflow":
         jobs:
