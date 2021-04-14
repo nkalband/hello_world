@@ -21,7 +21,7 @@ jobs:
     resource_class: arm.medium
     steps:
       - run: uname -a
-      - run: echo "Hello, Arm!"
+      - run: echo "Hello, Arm!" && uname -a && uname -p && free -h && du -sh .
 workflows:
     "Hello Workflow":
         jobs:
